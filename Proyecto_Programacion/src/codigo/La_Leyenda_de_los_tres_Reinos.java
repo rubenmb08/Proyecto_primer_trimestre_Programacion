@@ -49,12 +49,6 @@ public class La_Leyenda_de_los_tres_Reinos {
 			
 			if (!"Sir Aldric".equals(SirAldric)) {
 				System.out.println("Error, introduzca una opción válida");
-
-//			}else if (!"Elara".equals(personaje)) {
-//				System.out.println("Error, introduzca una opción válida");
-//
-//			}else if (!"Kael".equals(personaje)) {
-//			System.out.println("Error, introduzca una opción válida");
 			}
 			}while (!"Sir Aldric".equals(SirAldric));
 			System.out.println("Buena elección");
