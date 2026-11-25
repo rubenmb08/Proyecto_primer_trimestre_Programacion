@@ -3,11 +3,14 @@ package codigo;
 
 import java.util.Scanner;
 import java.util.Random;
+import java.util.HashMap;
+
 
 public class La_Leyenda_de_los_tres_Reinos {
 
     static Scanner sc = new Scanner(System.in);
-
+    static Random rd = new Random();
+    
     public static void main(String[] args) {
 
             System.out.println("LA LEYENDA DE LOS TRES REINOS");
@@ -66,9 +69,6 @@ public class La_Leyenda_de_los_tres_Reinos {
                 }
 
             } while (opcion != 2);
-
-            // Al elegir 3, termina el menú y vuelve
-            // al principio del bucle principal.
         }    
 
     // Nueva Partida
@@ -116,18 +116,12 @@ public class La_Leyenda_de_los_tres_Reinos {
                 sc.nextLine();
 
                 if (personaje == 1) {
-
-                    System.out.println("Buena elección: Sir Aldric");
                     SirAldric();
 
                 } else if (personaje == 2) {
-
-                    System.out.println("Buena elección: Elara");
                     Elara();
 
                 } else if (personaje == 3) {
-
-                    System.out.println("Buena elección: Kael");
                     Kael();
 
                 } else {
@@ -136,7 +130,6 @@ public class La_Leyenda_de_los_tres_Reinos {
                 }
 
             } else {
-
                 sc.nextLine();
                 personaje = 0;
 
@@ -147,23 +140,40 @@ public class La_Leyenda_de_los_tres_Reinos {
 
     }
 
-    // MÉTODOS DE LOS PERSONAJES
+    // 
 
     public static void SirAldric() {
-
-        System.out.println("\nHas elegido a Sir Aldric, el caballero.");
+    	boolean espadaMejorada = false;
+    	boolean tieneLlave = false;
+    	boolean haSuperadoAcertijo = false;
+    	boolean haVencidoDarius = false;
+    	boolean quiereAbandonar = false;
+        System.out.println("\nHas elegido a Sir Aldric, el caballero.\n");
 
     }
 
     public static void Elara() {
-
+    	boolean fragmento1 = false;
+    	boolean fragmento2 = false;
+    	boolean fragmento3 = false;
+    	boolean tienePocion = false;
+    	boolean haVencidoMorgana = false;
+    	boolean quiereAbandonar = false;
+    	
         System.out.println("\nHas elegido a Elara, la hechicera.");
-
+        System.out.println("\nEl rey entrega a Elara un pergamino que explica que la corona está protegida por un hechizo.");
+        
     }
 
     public static void Kael() {
-
-        System.out.println("\nHas elegido a Kael, el explorador.");
+    	boolean tieneMapa = false;
+    	boolean tieneHerramientas = false;
+    	boolean haEncontradoRutaSecreta = false;
+    	boolean haVencidoDarius = false;
+    	boolean quiereAbandonar = false;
+    	
+    	
+        System.out.println("\nHas elegido a Kael, el explorador.");        
 
     }
 
