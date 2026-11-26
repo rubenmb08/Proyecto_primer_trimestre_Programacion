@@ -143,12 +143,7 @@ public class La_Leyenda_de_los_tres_Reinos {
     // 
 
     public static void SirAldric() {
-    	boolean espadaMejorada = false;
-    	boolean tieneLlave = false;
-    	boolean haSuperadoAcertijo = false;
-    	boolean haVencidoDarius = false;
-    	boolean quiereAbandonar = false;
-        System.out.println("\nHas elegido a Sir Aldric, el caballero.\n");
+        
 
     }
 
@@ -172,9 +167,13 @@ public class La_Leyenda_de_los_tres_Reinos {
     	boolean haVencidoDarius = false;
     	boolean quiereAbandonar = false;
     	
-    	
         System.out.println("\nHas elegido a Kael, el explorador.");        
 
+    }
+    
+    public static void continuar() {
+    	System.out.println("\nPulsa INTRO para continuar");
+    	sc.nextLine();
     }
 
 }
