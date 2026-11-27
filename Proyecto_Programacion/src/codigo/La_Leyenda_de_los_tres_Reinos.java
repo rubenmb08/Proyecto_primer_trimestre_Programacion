@@ -148,25 +148,26 @@ public class La_Leyenda_de_los_tres_Reinos {
     }
 
     public static void Elara() {
-    	boolean fragmento1 = false;
-    	boolean fragmento2 = false;
-    	boolean fragmento3 = false;
-    	boolean tienePocion = false;
-    	boolean haVencidoMorgana = false;
-    	boolean quiereAbandonar = false;
-    	
+  
         System.out.println("\nHas elegido a Elara, la hechicera.");
-        System.out.println("\nEl rey entrega a Elara un pergamino que explica que la corona está protegida por un hechizo.");
+        System.out.println("El rey Alaric te entrega un antiguo pergamino.");
+        System.out.println("Debes recuperar tres fragmentos mágicos.");
+        
+        System.out.println("\nREY ALARIC - El poder de la corona depende de esos fragmentos.");
+        
+        continuar();
+        
+        System.out.println("\nMERLIÓN, EL SABIO:");
+        System.out.println("Si quieres conseguir el primer fragmento debes dominar la magia.");
+        System.out.println("Para ello debes de sguir esta secuencia de números: 2 - 4 - 16 - ");
+
+        secuencia();
+        
         
     }
 
     public static void Kael() {
-    	boolean tieneMapa = false;
-    	boolean tieneHerramientas = false;
-    	boolean haEncontradoRutaSecreta = false;
-    	boolean haVencidoDarius = false;
-    	boolean quiereAbandonar = false;
-    	
+    
         System.out.println("\nHas elegido a Kael, el explorador.");        
 
     }
@@ -175,5 +176,21 @@ public class La_Leyenda_de_los_tres_Reinos {
     	System.out.println("\nPulsa INTRO para continuar");
     	sc.nextLine();
     }
+    
+    //MiniJuegos
+    
+    public static void secuencia() {
+    	
+    	System.out.println("¿Cuál es el siguiente número?:");
+    	System.out.println("1. 32");
+    	System.out.println("2. 256");
+    	System.out.println("3. 64");
+    	
+    	System.out.print("Elige una opción: ");
+    	
+    	
+    	
+    }
+
 
 }
